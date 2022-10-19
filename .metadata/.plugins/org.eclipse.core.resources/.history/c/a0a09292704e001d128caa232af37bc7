@@ -1,0 +1,22 @@
+package testeGameManiaUc14;
+
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
+
+public class TestePaginaLogin {
+	@Before
+	public void ConfigurarTeste ( ) {
+		
+	}
+	
+	@Test
+	public void TesteLogin ( ) {
+		
+	}
+	
+	@After
+	public void EncerrarTeste ( ) {
+		
+	}
+}

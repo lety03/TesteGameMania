@@ -1,0 +1,35 @@
+package testeGameManiaUc14;
+
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
+import org.openqa.selenium.By;
+import org.openqa.selenium.By.ByClassName;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class TestePaginaLogin {
+	
+	private WebDriver driver;
+	
+	@Before
+	public void ConfigurarTeste ( ) {
+		
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\OI417415\\Webdriver\\chromedriver.exe");
+		driver = new ChromeDriver();
+		driver.get("http://localhost:4200");
+		driver.manage().window().maximize();
+		//driver.findElement(By.className("input-login ng-untouched ng-pristine ng-valid")).click();
+		driver.findElement(By.id("logcad")).click();
+	}
+	
+	@Test
+	public void TesteLogin ( ) {
+		//driver.findElement(By.id("arealogin")).sendKeys("leticia@email.com");
+	}
+	
+	@After
+	public void EncerrarTeste ( ) {
+		
+	}
+}
